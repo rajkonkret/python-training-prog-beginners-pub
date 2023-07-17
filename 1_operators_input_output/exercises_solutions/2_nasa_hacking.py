@@ -9,12 +9,12 @@ from datetime import date
 # trzeba zrobić wcześniej w terminalu: pip install freezegun
 from freezegun import freeze_time
 
-freezer: freeze_time = freeze_time("2012-12-26 12:00:01")
+freezer: freeze_time = freeze_time("2012-12-27 12:00:01")
 freezer.start()
 
 today: date = date.today()
 
-if 24 <= today.day <= 26 and today.month == 12:
+if today.month == 12 and 24 <= today.day <= 26:
     print("Merry Christmas")
 
 input("Press Enter to start hacking NASA")
