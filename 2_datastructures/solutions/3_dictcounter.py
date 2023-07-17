@@ -13,11 +13,21 @@ for key, value in counter.items():
     print(f"W liście element {key} znalazł się {value} raz(y)")
     # print(f"W liście element {key} znalazł się {value} raz{'y' if value > 1 else ''}")
 
+##  Alternatywne rozwiązanie
 
+numbers: list[int] = [2, 5, 1, 5, 3, 5, 1, 25, -3]
+
+counter: dict[int, int] = dict()
+for number in numbers:
+    counter[number] = numbers.count(number)
+
+print(counter)
+
+##  Aletrnatywne rozwiązanie #2
 from collections import defaultdict
 
 counter: dict[int, int] = defaultdict(lambda: 0)
 for number in numbers:
     counter[number] += 1
 
-print(counter)
+print(dict(counter))
