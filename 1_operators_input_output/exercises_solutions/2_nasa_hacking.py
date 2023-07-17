@@ -6,6 +6,7 @@ import time
 import random
 from datetime import date
 
+# trzeba zrobić wcześniej w terminalu: pip install freezegun
 from freezegun import freeze_time
 
 freezer: freeze_time = freeze_time("2012-12-26 12:00:01")
