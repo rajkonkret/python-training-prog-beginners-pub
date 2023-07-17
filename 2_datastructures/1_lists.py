@@ -111,3 +111,9 @@ print(new_lists_of_lists)
 
 print(id(list_of_lists[1]))
 print(id(new_lists_of_lists[1]))  # różne identyfikatory
+
+my_list: list[int] = []
+for i in range(10):
+    my_list.append(i ** 2)  # dodaje element na końcu listy
+
+print(my_list)
