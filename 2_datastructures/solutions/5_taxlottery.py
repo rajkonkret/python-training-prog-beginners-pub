@@ -25,7 +25,7 @@ if len(taxpayers) <= max_lottery_attendants:
 else:
     lottery_attendants = taxpayers[:max_lottery_attendants]
 
-# Ewentualnie po prostu tak
+# Ewentualnie tak
 # lottery_attendants = taxpayers[:max_lottery_attendants]
 
 tax_discount_percent: int = random.randint(2, 11)
