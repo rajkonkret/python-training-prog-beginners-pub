@@ -11,7 +11,6 @@ print(upper_case_words)
 
 
 # Drugi fragment
-# Wskazówka: rozważ użycie any
 numbers: list[int] = [1, 5, 7, 12, 33]
 is_any_even: bool = False
 for number in numbers:
