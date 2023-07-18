@@ -31,3 +31,4 @@ for number in numbers:
     counter[number] += 1
 
 print(dict(counter))
+
