@@ -162,3 +162,16 @@ def modify_variable() -> None:
 
 modify_variable()
 print(variable)  # wypisze 1, zmienna globalna variable zostanie zmodyfikowana
+
+
+def calculator(number: int) -> tuple[int, int]:
+    multiplication_result = number * 2
+    division_result = number // 2
+    return multiplication_result, division_result
+
+
+print(calculator(5))
+_, result = calculator(5)
+
+print(result)  # wipisze wynik dzielenia
+
