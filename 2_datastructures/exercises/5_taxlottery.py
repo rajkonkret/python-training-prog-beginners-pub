@@ -30,6 +30,7 @@ for i, lottery_attendant in enumerate(lottery_attendants):
     new_tax_value: float = round(lottery_attendant[3] * (1 - tax_discount_percent / 100), 2)
     lottery_attendants[i] = lottery_attendant[:3] + (new_tax_value,)
 
+
 for i in range(len(lottery_attendants)):
     print(f"Gratulujemy, {lottery_attendants[i][1]} {lottery_attendants[i][2]}! "
           f"Wylosowano Pana/Panią w loterii podatkowej! "
