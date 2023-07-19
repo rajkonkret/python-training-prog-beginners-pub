@@ -1,0 +1,7 @@
+1. W get_nearest_points.py wykorzystujemy metodę euclidean_distance z calculator.segment_calculator. Jednak
+program jeszcze pyta nas o punkty A i B, które nas nie interesują. Zmodyfikuj get_nearest_points lub
+segment_calculator tak, aby tego uniknąć.
+2. Program numpy.py ma problem z działaniem. Zidentyfikuj problem i zaproponuj rozwiązanie.
+3. Napisz kilka różnych programów w Pythonie tak, aby uzyskać 8 różnych wyjątków nie wywołując ich bezpośrednio.
+4. Mamy program exception.py, uzupełnij very_complex_operation() zdefiniowanym przez siebie wyjątkiem ComarchException
+tak, aby wyświetlone zostały linie: "I want to see you" oraz "I want to see you too".
