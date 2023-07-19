@@ -1,10 +1,9 @@
 class Celsius:
     def __init__(self, temperature: float = 0):
-        self.temperature = temperature
+        self._temperature = temperature
 
     def to_fahrenheit(self) -> float:
-        return (self.temperature * 1.8) + 32
-
+        return (self._temperature * 1.8) + 32
 
 
 class Celsius:
@@ -36,10 +35,10 @@ print(human.to_fahrenheit())
 # Dekorator property
 class Celsius:
     def __init__(self, temperature: float = 0):
-        self._temperature: float = temperature
+        self.temperature: float = temperature
 
     def to_fahrenheit(self) -> float:
-        return (self._temperature * 1.8) + 32
+        return (self.temperature * 1.8) + 32
 
     @property
     def temperature(self):
@@ -54,14 +53,23 @@ class Celsius:
         self._temperature = value
 
 
+human: Celsius = Celsius(37)
+print(human.temperature)
 # coldest_thing: Celsius = Celsius(-300)
 
+
 class Temperature:
+    def __init__(self):
+        self.__my_field: int = 5
+
+    def another_method(self):
+        self.__secret_method()
+
     def __secret_method(self):
         pass
 
+# Temperature().__secret_method()
 
 print(dir(Temperature()))
 
 Temperature()._Temperature__secret_method()
-
