@@ -61,12 +61,21 @@ class Ford(Car):
     def __init__(self, owner: Person, colour: str = "black", max_speed: int = 100):
         super().__init__(owner, "Ford", colour, max_speed)
 
+    @staticmethod
+    def some_static() -> str:
+        return "I am another static method"
+
+    def run(self):
+        for _ in range(self.max_speed // 20):
+            print("Brrrrum")
+
 
 ford_ford: Ford = Ford(john)
 print(ford_ford.max_speed)
 ford_ford.run()
 print(ford_ford)
 print(Car.some_static())
+print(Ford.some_static())
 print(ford_ford.some_static())
 
 print(isinstance(ford_car, Ford))
