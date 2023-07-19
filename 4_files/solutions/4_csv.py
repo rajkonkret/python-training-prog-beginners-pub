@@ -3,11 +3,24 @@
 
 import numpy as np
 
-data: np.ndarray = np.genfromtxt("data.csv", dtype=None, delimiter=',', encoding='utf-8', skip_header=1)
+data: np.ndarray = np.genfromtxt("data.csv", dtype=None, delimiter=',', encoding='utf-8', skip_header=True)
 
 bmi_ndarray: np.ndarray = data[:, 3] / (data[:, 2] / 100) ** 2
 
-for person, bmi in zip(data[:, 0], bmi_ndarray):
-    print(f"Osoba o id {person} ma bmi {bmi:.2f}")
+for person_id, bmi in zip(data[:, 0], bmi_ndarray):
+    print(f"Osoba o id {person_id} ma bmi {bmi:.2f}")
 
 print(bmi_ndarray.mean())
+
+
+## alternatywne rozwiązanie
+
+import pandas as pd
+
+data = pd.read_csv("data.csv", delimiter=",")
+data["bmi"] = data["weight(kg)"] / (data["height(cm)"] / 100) ** 2
+
+for person_id, bmi in zip(data["id"], data["bmi"]):
+    print(f"Osoba o id {person_id} ma bmi {bmi:.2f}")
+
+print(data["bmi"].mean())
