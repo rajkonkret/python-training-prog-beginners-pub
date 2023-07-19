@@ -5,3 +5,10 @@ Aby zainstalować wszystkie wymagana pakiety można użyć
 pip install -r requierements
 ```
 w katalogu głownym projektu.
+
+Aby stworzyć wirtualne środowisko należy wykonać:
+```commandline
+pip install virtualenv
+virtualenv venv
+```
+
