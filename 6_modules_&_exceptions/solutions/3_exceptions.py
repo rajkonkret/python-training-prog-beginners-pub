@@ -26,3 +26,8 @@
 # next(a)
 # next(a)
 
+# 9. NameError
+# 2 * name
+
+# 10. ModuleNotFoundError
+# import not_found
