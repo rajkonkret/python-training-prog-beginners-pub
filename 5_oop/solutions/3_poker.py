@@ -43,6 +43,11 @@ class Hand:
         card_figures = [card.figure for card in self._cards]
         return any(card.figure in card_figures[i + 1:] for i, card in enumerate(self._cards))
 
+    # Alternatywne rozwiązanie:
+    # def has_pair(self) -> bool:
+    #     return len({card.figure for card in self._cards}) < 5
+
+
     def has_flush(self) -> bool:
         return all(x.suite == self._cards[0].suite for x in self._cards[1:])
 
