@@ -61,7 +61,6 @@ john = Person("John", "Kowalski")
 kia = Kia(john, "Skoda")
 
 def use_a_car(car: AbstractCar):
-
     car.run()
 
 use_a_car(kia)
