@@ -98,6 +98,12 @@ class Vector:
 
 
 if __name__ == '__main__':
-    vector: Vector = Vector() + 1
+    vector: Vector = Vector(1, 2)
+    another_vector: Vector = vector * 2
+    print(another_vector)
+    for value in vector:
+        print(value)
+    print(len(vector))
+    print(vector[0])
+    str(vector)
     print(vector)
-
