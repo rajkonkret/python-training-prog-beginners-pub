@@ -13,4 +13,4 @@ virtualenv venv
 ```
 
 Link do testu: https://e-profesor.comarch.pl/zadania/course/view.php?id=165
-
+Link do ankiety: https://erp.comarch.pl/Szkolenia/Ankiety
