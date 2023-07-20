@@ -12,3 +12,5 @@ pip install virtualenv
 virtualenv venv
 ```
 
+Link do testu: https://e-profesor.comarch.pl/zadania/login/index.php
+
